@@ -11,7 +11,7 @@
 
 <script>
 import articles from './Articles'
-import {getTabs, getArticles} from '../Mock/index.js'
+import {getTabs, getArticles} from '../../Mock/index.js'
 // console.log(getTabs, 'getTabs')
 export default {
   name: 'tabs',
