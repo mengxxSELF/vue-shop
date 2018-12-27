@@ -1,4 +1,4 @@
-# vue-eyes
+# vue shop
 
 > vue test
 

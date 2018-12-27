@@ -2,22 +2,10 @@
  * @Author: 孟闲闲 mock数据
  * @Date: 2018-12-26 17:25:01
  * @Last Modified by: mxx
- * @Last Modified time: 2018-12-27 13:49:17
+ * @Last Modified time: 2018-12-27 15:45:33
  */
 
 import Mock, { Random } from 'mockjs'
-// let data = Mock.mock({
-//   // 属性 list 的值是一个数组，其中含有 1 到 10 个元素
-//   'list|1-10': [{
-//     // 属性 id 是一个自增数，起始值为 1，每次增 1
-//     'id|+1': 1
-//   }]
-// })
-
-// let data = Mock.mock('@EMAIL')
-
-// console.log(data)
-
 let getTabs = () => {
   let data = Mock.mock({
     'articles|2': [
