@@ -1,5 +1,6 @@
 <template>
   <div>
+    <banner></banner>
     <div class='tabs'>
       <span  v-for="item in tabs" :key = "item.id" :class='{ active: showTabId == item.id }'  @click="changeTab(item.id)" >
         <img :src="item.img_url" >
@@ -11,6 +12,7 @@
 
 <script>
 import articles from './Articles'
+import banner from './Banner'
 import {getTabs, getArticles} from '../../Mock/index.js'
 // console.log(getTabs, 'getTabs')
 export default {
@@ -22,7 +24,7 @@ export default {
       showTabId: null
     }
   },
-  components: {articles},
+  components: {articles, banner},
   created: function () {
     console.log(this.tabs)
   },

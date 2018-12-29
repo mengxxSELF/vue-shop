@@ -4,6 +4,8 @@
     <p> {{ 'id' + id + ',' + title}} </p>
     <span @click="deleteAritcle(id)" > 删除 </span>
     <span> 置顶 </span>
+    <!-- <router-link to='/detail/id/img'>detail</router-link> -->
+    <router-link :to="{name:'detail',params:{id, title, img}}">detail</router-link>
   </div>
 </template>
 
@@ -46,3 +48,4 @@ export default {
     margin-right: 10px;
   }
 </style>
+
