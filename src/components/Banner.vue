@@ -14,7 +14,7 @@
 import {getBanners} from '../../Mock'
 export default {
   name: 'banner',
-  data: () => {
+  data () {
     return {
       banners: []
     }

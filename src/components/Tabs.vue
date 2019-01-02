@@ -17,7 +17,7 @@ import {getTabs, getArticles} from '../../Mock/index.js'
 // console.log(getTabs, 'getTabs')
 export default {
   name: 'tabs',
-  data: () => {
+  data () {
     return {
       tabs: [],
       articlesList: [],

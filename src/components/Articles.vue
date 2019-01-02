@@ -1,9 +1,9 @@
 <template>
   <div>
     <img :src="img" alt="">
-    <p> {{ 'id' + id + ',' + title}} </p>
+    <p> {{ 'id' + id + ',' + actuallyTitle}} </p>
     <span @click="deleteAritcle(id)" > 删除 </span>
-    <span> 置顶 </span>
+    <span > 置顶 </span>
     <!-- <router-link to='/detail/id/img'>detail</router-link> -->
     <router-link :to="{name:'detail',params:{id, title, img}}">detail</router-link>
   </div>
@@ -13,14 +13,13 @@
 export default {
   name: 'articles',
   props: ['img', 'title', 'id'],
-  data: () => {
+  data () {
     return {
-      // img: this.img,
-      // title: this.title
+      actuallyTitle: this.title + ' i am article title'
     }
   },
   methods: {
-    deleteAritcle: function (id) {
+    deleteAritcle (id) {
       // console.log(id, 'id')
       this.$emit('willDelete', id)
     }
